@@ -1,0 +1,1 @@
+# esports-scouting-report-generator
