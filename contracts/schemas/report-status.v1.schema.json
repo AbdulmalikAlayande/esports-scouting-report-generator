@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "report-status.v1.schema.json",
+  "title": "Report Status Contract v1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "requestId",
+    "status",
+    "message",
+    "progress",
+    "currentStep",
+    "createdAt",
+    "reportAvailable",
+    "workflowState",
+    "contractVersion"
+  ],
+  "properties": {
+    "requestId": { "type": "string", "minLength": 1 },
+    "status": { "type": "string", "enum": ["PENDING", "PROCESSING", "COMPLETED", "FAILED"] },
+    "message": { "type": "string" },
+    "progress": { "type": "integer" },
+    "currentStep": { "type": "string" },
+    "createdAt": { "type": ["string", "null"] },
+    "completedAt": { "type": ["string", "null"] },
+    "reportAvailable": { "type": "boolean" },
+    "error": { "type": ["string", "null"] },
+    "workflowState": {
+      "type": "string",
+      "enum": ["QUEUED", "INGESTING", "FEATURIZING", "SYNTHESIZING", "COMPOSING", "READY", "FAILED", "CANCELLED"]
+    },
+    "errorCode": {
+      "type": ["string", "null"],
+      "enum": [
+        "RETRYABLE_PROVIDER",
+        "RETRYABLE_INFRA",
+        "NON_RETRYABLE_DATA",
+        "NON_RETRYABLE_CONTRACT",
+        "NON_RETRYABLE_AUTH",
+        "NON_RETRYABLE_CONFIG",
+        "UNKNOWN",
+        null
+      ]
+    },
+    "retryable": { "type": ["boolean", "null"] },
+    "contractVersion": { "type": "string", "const": "report-status.v1" }
+  }
+}
