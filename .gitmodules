@@ -4,3 +4,6 @@
 [submodule "scouting-api"]
 	path = scouting-api
 	url = https://github.com/AbdulmalikAlayande/valorant-scouting-tool-java
+[submodule "scouting-tool"]
+	path = scouting-tool
+	url = https://github.com/AbdulmalikAlayande/esports-scouting-report-generator-ui.git
