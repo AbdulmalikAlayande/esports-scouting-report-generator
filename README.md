@@ -16,7 +16,7 @@ This root repo is not the main implementation surface for API, worker, or UI int
 
 - [`scouting-api`](https://github.com/AbdulmalikAlayande/esports-scouting-report-generator-api): Java/Spring Boot control plane, report lifecycle/status API, and read-model delivery.
 - [`scouting-engine`](https://github.com/AbdulmalikAlayande/esports-scouting-report-generator-engine): Python worker pipeline for ingestion, featurization, synthesis, and report composition.
-- [`scouting-ui`](https://github.com/AbdulmalikAlayande/esports-scouting-report-generator-tool): Next.js frontend for report submission, status tracking, and report viewing.
+- [`scouting-ui`](https://github.com/AbdulmalikAlayande/esports-scouting-report-generator-ui): Next.js frontend for report submission, status tracking, and report viewing.
 
 ## Architecture Snapshot
 
