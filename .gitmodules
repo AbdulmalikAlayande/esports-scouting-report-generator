@@ -1,9 +1,9 @@
 [submodule "scouting-engine"]
 	path = scouting-engine
-	url = https://github.com/AbdulmalikAlayande/valorant-scouting-engine
+	url = https://github.com/AbdulmalikAlayande/esports-scouting-report-generator-engine
 [submodule "scouting-api"]
 	path = scouting-api
-	url = https://github.com/AbdulmalikAlayande/valorant-scouting-tool-java
+	url = https://github.com/AbdulmalikAlayande/esports-scouting-report-generator-api
 [submodule "scouting-tool"]
 	path = scouting-tool
-	url = https://github.com/AbdulmalikAlayande/esports-scouting-report-generator-ui.git
+	url = https://github.com/AbdulmalikAlayande/esports-scouting-report-generator-ui
