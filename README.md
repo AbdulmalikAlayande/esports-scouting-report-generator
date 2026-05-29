@@ -1,4 +1,4 @@
-# Esports Scouting Report Generator
+# Stratigen - An Esports Scouting Report Generator
 
 Polyglot scouting system that turns natural-language prompts into tactical esports reports.
 
